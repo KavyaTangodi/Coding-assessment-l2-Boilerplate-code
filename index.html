@@ -6,17 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
+    <title>Cart Page</title>
+    <script src="./script.js"></script>
 
 </head>
-
+    
 <body>
     <!-- Your code goes here -->
+    <header>
     <div class="container">
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+        <div class="container">
         <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
     </div>
-    <!-- Happy coding 😊 -->
-    <script src="./script.js"></script>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="cart-icon"><a href="#">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="cart-page">
+        <div class="container">
+            <!-- Cart Items Section -->
+            <section class="cart-items">
+                <h1>Your Cart</h1>
+                <div id="cart-list">
+                    <!-- Items will be dynamically loaded here -->
+                </div>
+            </section>
+
+            <!-- Cart Totals Section -->
+            <aside class="cart-totals">
+                <h2>Cart Totals</h2>
+                <div>
+                    <p>Subtotal: <span id="subtotal">₹0.00</span></p>
+                    <p>Total: <span id="total">₹0.00</span></p>
+                    <button id="checkout-button">Check Out</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-icons">
+                <span>High Quality</span>
+                <span>Warranty Protection</span>
+                <span>Secure Payment</span>
+            </div>
+        </div>
+    </footer>
 </body>
+
+</html>
 
 </html>
